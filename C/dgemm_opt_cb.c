@@ -95,3 +95,6 @@ int main(int argc, char* argv[]) {
     }
     return 0;
 }
+
+//instruction to compile: 
+//gcc -o codigocb dgemm_cb.c -mavx2 -std=c11 -march=native -O3  

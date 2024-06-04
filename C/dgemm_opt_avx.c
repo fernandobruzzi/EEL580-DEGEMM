@@ -81,3 +81,6 @@ int main(int argc, char* argv[]) {
     }
     return 0;
 }
+
+//instruction to compile: 
+//gcc -o codigoavx avx.c -mavx512f -O3

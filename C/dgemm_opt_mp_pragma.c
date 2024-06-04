@@ -97,3 +97,6 @@ int main(int argc, char* argv[]) {
     }
     return 0;
 }
+
+//instruction to compile: 
+//gcc -o codigomp dgemm_opt_mp_pragma.c -mavx2 -std=c11 -march=native -O3  

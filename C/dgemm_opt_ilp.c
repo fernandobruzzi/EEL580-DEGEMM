@@ -86,3 +86,6 @@ int main(int argc, char* argv[]) {
     }
     return 0;
 }
+
+//instruction to compile: 
+//gcc -o codigoilp ilp.c -mavx512f -O3
