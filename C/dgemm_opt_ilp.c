@@ -25,17 +25,7 @@ void dgemm(size_t n, double* A, double* B, double* C) {
         }
     }
 
-
-void print_matrix(size_t n, double* A) {
-    for (size_t i = 0; i < n; i++) {
-        for (size_t j = 0; j < n; j++) {
-            printf("%8.2lf ", A[(i * n) + j]);
-        }
-        printf("\n");
-    }
-    printf("\n");
-}
-
+//create random matrix with values between 0 and 1
 void make_rand_matrix(size_t n, double* A) {
     srand((unsigned int)time(NULL));
     for (size_t i = 0; i < n * n; i++) {
@@ -43,6 +33,7 @@ void make_rand_matrix(size_t n, double* A) {
     }
 }
 
+//initialize 0 matrix
 void initialize_matrix_with_zeros(size_t n, double* C) {
     for (size_t i = 0; i < n * n; i++) {
         C[i] = 0;
@@ -72,17 +63,23 @@ int main(int argc, char* argv[]) {
         return 1;
     }
 
+    //start the random matrices
     make_rand_matrix(n, A);
     make_rand_matrix(n, B);
+
+    //result matrix
     initialize_matrix_with_zeros(n, C);
 
+    //time the matrix multiply
     clock_t start = clock();
     dgemm(n, A, B, C);
     clock_t stop = clock();
 
+    //get the time it took
     double elapsed_time = (double)(stop - start) / CLOCKS_PER_SEC * 1000;
     printf("Tempo total para dgemm = %.2f ms\n", elapsed_time);
 
+    //free allocated memory
     _mm_free(A);
     _mm_free(B);
     _mm_free(C);
