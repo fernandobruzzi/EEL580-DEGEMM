@@ -83,4 +83,4 @@ int main(int argc, char* argv[]) {
 }
 
 //instruction to compile: 
-//gcc -o codigoavx avx.c -mavx512f -O3
+//gcc -o codigoavx avx.c -mavx2 -O3

@@ -99,4 +99,4 @@ int main(int argc, char* argv[]) {
 }
 
 //instruction to compile: 
-//gcc -o codigomp dgemm_opt_mp_pragma.c -mavx2 -std=c11 -march=native -O3  
+//gcc -o codigomp dgemm_opt_mp_pragma.c -mavx2 -fopenmp -O3  

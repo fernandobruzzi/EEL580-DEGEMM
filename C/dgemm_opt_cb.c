@@ -97,4 +97,4 @@ int main(int argc, char* argv[]) {
 }
 
 //instruction to compile: 
-//gcc -o codigocb dgemm_cb.c -mavx2 -std=c11 -march=native -O3  
+//gcc -o codigocb dgemm_cb.c -mavx2 -O3  

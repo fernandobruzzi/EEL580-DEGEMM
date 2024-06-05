@@ -88,4 +88,4 @@ int main(int argc, char* argv[]) {
 }
 
 //instruction to compile: 
-//gcc -o codigoilp ilp.c -mavx512f -O3
+//gcc -o codigoilp ilp.c -mavx2 -O3

@@ -74,7 +74,7 @@ int main(int argc, char* argv[]) {
 }
 
 //instruction to compile: 
-//gcc -o codigoavx dgemm.c -00 
-//gcc -o codigoavx dgemm.c -01 
-//gcc -o codigoavx dgemm.c -02
-//gcc -o codigoavx dgemm.c -03
+//gcc -o codigoc dgemm.c -00 
+//gcc -o codigoc dgemm.c -01 
+//gcc -o codigoc dgemm.c -02
+//gcc -o codigoc dgemm.c -03   
